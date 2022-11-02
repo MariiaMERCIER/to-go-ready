@@ -26,7 +26,9 @@ function App() {
                 switch1 === false && setSwitch1(!switch1);
               }}
               style={{
-                backgroundColor: switch1 ? "#5C48D2" : "rgb(229, 229, 229)",
+                backgroundColor:
+                  switch1 === true ? "#5C48D2" : "rgb(229, 229, 229)",
+                color: switch1 === true ? "white" : "black",
               }}
               className="on"
             >
@@ -37,7 +39,9 @@ function App() {
                 switch2 === false && setSwitch2(!switch2);
               }}
               style={{
-                backgroundColor: switch2 ? "#5C48D2" : "rgb(229, 229, 229)",
+                backgroundColor:
+                  switch2 === true ? "#5C48D2" : "rgb(229, 229, 229)",
+                color: switch2 === true ? "white" : "black",
               }}
               className="on"
             >
@@ -48,7 +52,9 @@ function App() {
                 switch3 === false && setSwitch3(!switch3);
               }}
               style={{
-                backgroundColor: switch3 ? "#5C48D2" : "rgb(229, 229, 229)",
+                backgroundColor:
+                  switch3 === true ? "#5C48D2" : "rgb(229, 229, 229)",
+                color: switch3 === true ? "white" : "black",
               }}
               className="on"
             >
@@ -62,7 +68,9 @@ function App() {
                 switch1 === true && setSwitch1(!switch1);
               }}
               style={{
-                backgroundColor: switch1 ? "#5C48D2" : "rgb(229, 229, 229)",
+                backgroundColor:
+                  switch1 === false ? "#5C48D2" : "rgb(229, 229, 229)",
+                color: switch1 === false ? "white" : "black",
               }}
               className="off"
             >
@@ -73,7 +81,9 @@ function App() {
                 switch2 === true && setSwitch2(!switch2);
               }}
               style={{
-                backgroundColor: switch2 ? "#5C48D2" : "rgb(229, 229, 229)",
+                backgroundColor:
+                  switch2 === false ? "#5C48D2" : "rgb(229, 229, 229)",
+                color: switch2 === false ? "white" : "black",
               }}
               className="off"
             >
@@ -84,18 +94,36 @@ function App() {
                 switch3 === true && setSwitch3(!switch3);
               }}
               style={{
-                backgroundColor: switch3 ? "#5C48D2" : "rgb(229, 229, 229)",
+                backgroundColor:
+                  switch3 === false ? "#5C48D2" : "rgb(229, 229, 229)",
+                color: switch3 === false ? "white" : "black",
               }}
               className="off"
             >
               OFF
             </button>
           </div>
-
-          <button className="noWay">NO WAY!</button>
+          <span
+            style={{
+              background:
+                switch1 === true && switch2 === true && switch3 === true
+                  ? "green"
+                  : "salmon",
+            }}
+            className="noWay"
+          >
+            {switch1 === true && switch2 === true && switch3 === true
+              ? "GO!"
+              : "NO WAY!"}
+          </span>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <p>
+          Made with <span>React</span> at <span>Le Reacteur</span> by{" "}
+          <span>Mariia MERCIER</span>
+        </p>
+      </footer>
     </>
   );
 }

@@ -31,28 +31,78 @@ h1 {
   width: 100px;
 }
 .form {
-  margin-top: 320px;
+  margin-top: 250px;
   display: flex;
   align-items: center;
   gap: 50px;
 }
 
 .off {
+  border-radius: 15px;
+  border: none;
   display: flex;
   margin-bottom: 70px;
   height: 70px;
+  font-size: 45px;
+  color: rgb(0, 0, 0);
   width: 120px;
+  justify-content: center;
+  align-items: center;
 }
 
 .on {
+  border-radius: 15px;
+  border: none;
   display: flex;
   margin-bottom: 70px;
   height: 70px;
   width: 120px;
+  font-size: 45px;
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
 }
 
 .noWay {
+  border-radius: 15px;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 400px;
   height: 145px;
   width: 250px;
+  font-size: 45px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-size: 18px;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (max-width: 1550px) {
+  .container {
+    padding-left: 20px;
+  }
+  .containerMain {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .noWay {
+    margin-left: 250px;
+  }
+}
+@media (max-width: 1024px) {
+  .noWay {
+    margin-left: 150px;
+  }
 }
