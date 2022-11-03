@@ -23,7 +23,7 @@ function App() {
           <div className="btnON">
             <button
               onClick={() => {
-                switch1 === false && setSwitch1(!switch1);
+                setSwitch1(true);
               }}
               style={{
                 backgroundColor:
@@ -36,7 +36,7 @@ function App() {
             </button>
             <button
               onClick={() => {
-                switch2 === false && setSwitch2(!switch2);
+                setSwitch2(true);
               }}
               style={{
                 backgroundColor:
@@ -49,7 +49,7 @@ function App() {
             </button>
             <button
               onClick={() => {
-                switch3 === false && setSwitch3(!switch3);
+                setSwitch3(true);
               }}
               style={{
                 backgroundColor:
@@ -65,7 +65,7 @@ function App() {
           <div className="btnOFF">
             <button
               onClick={() => {
-                switch1 === true && setSwitch1(!switch1);
+                setSwitch1(false);
               }}
               style={{
                 backgroundColor:
@@ -78,7 +78,7 @@ function App() {
             </button>
             <button
               onClick={() => {
-                switch2 === true && setSwitch2(!switch2);
+                setSwitch2(false);
               }}
               style={{
                 backgroundColor:
@@ -91,7 +91,7 @@ function App() {
             </button>
             <button
               onClick={() => {
-                switch3 === true && setSwitch3(!switch3);
+                setSwitch3(false);
               }}
               style={{
                 backgroundColor:
